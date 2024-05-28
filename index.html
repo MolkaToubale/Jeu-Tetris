@@ -1,0 +1,68 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/Logo.png" type="image/png" >
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/657de39a82.js" crossorigin="anonymous"></script>
+        <title>Tetris</title>
+    </head>
+    <body>
+        <img src="images/Logo.png" alt="logo tetris" title="Ce travail a été élaboré par Molka Toubale et Med Rayen Malouche étudiants en 1 GINFO A" style="width: 20%; height:5%;"/>
+        <div class="container">
+            <canvas id="tetris" class ="glowing" width="240" height="400" ></canvas>
+
+            <div class="commandes">
+                <div id="score">Score : 0</div>
+                <div id="niveau">Niveau : 1</div>
+
+                <div class="buttons">
+                    <button id="startButton">Commencer</button>
+                    <button id="pauseButton">Pause</button>
+                    <button id="stopButton">Stop</button>
+                </div>
+
+                <select name="Level" id="level">
+                    <option value="facile">Facile</option>
+                    <option value="normal">Normal</option>
+                    <option value="difficile">Difficile</option>
+                </select>
+
+                <div class="help">
+
+                    <div class="tetris-move">
+                        <h1>Controleurs:</h1>
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <br/>
+                        <i class="fa-solid fa-arrow-left-long left"></i>
+                        <i class="fa-solid fa-arrow-right-long right"></i>
+                        <img src="images/espace.png" alt="espace" height="19%" /> 
+                    </div>
+                
+                    <div class="next">
+                        <h1>Prochain:</h1>
+                    <canvas id="next-tet" class="next-tet2" width="130" height="100"></canvas>
+                    </div>
+
+                       
+                    <button  width="20%" heigth="20%" onclick="updateNextTetrimino()" title="A partir du 2eme niveau vous pouvez changer le prochain tetrimino">🔄</button>
+                    
+
+
+                </div>
+
+                
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+
+        <footer>
+            <div class="CR">
+                <p>© 2023 Copyright. Tous droits réservés aux membres du groupe Molka Toubale et Med Rayen Mallouche. Made with &#129293; & &#9749;</p>
+            </div>
+        </footer>
+    </body>
+    </html>

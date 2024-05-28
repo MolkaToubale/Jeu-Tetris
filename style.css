@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+body{
+    background: #140f0e;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.commandes{
+    background-color: #2a9700;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 480px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-top: 35px;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#score{
+    padding: 15px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.help{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+
+
+h1{
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 15px;
+}
+
+i{
+    font-size: 12px;
+}
+
+.down{
+    display: block !important;
+}
+.left{
+    margin-right: 40px;
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    width: 90%;
+    height:40px ;
+    background-color: #105902; 
+    color: #EEEEEE;
+    font-weight:600 ;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    background-color: #2a9700;
+}
+
+#tetris{
+    
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline;
+    height: 85vh;
+    border: 3px solid #010101;
+    background-color: #EEEEEE;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.next{
+    flex-direction: column;
+    
+}
+.next-tet2 {
+     display: flex; 
+    border-radius: 5px;
+    border: 3px solid #010101;
+    background-color: #EEEEEE;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+} 
+
+#next-tet {
+    display: block;
+    
+    margin: auto;
+}
+
+
+#level{
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 15px;
+    font-family: poppins;
+}
+
+.CR{
+    
+    background: #181818;
+    padding: 8px 100px;
+     text-align: center; 
+    color: #999;
+    
+
+}
+
+
+.glowing {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #0ff, 0 0 40px #00f;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #f00, 0 0 40px #ff0, 0 0 50px #f00;
+    }
+  }
